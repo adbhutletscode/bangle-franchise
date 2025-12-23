@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-800;
+  }
+
+  h1 {
+    @apply text-3xl md:text-5xl font-serif font-bold text-maroon;
+  }
+
+  h2 {
+    @apply text-2xl md:text-4xl font-serif font-bold text-maroon;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-serif font-semibold text-maroon;
+  }
+
+  button {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-maroon text-white rounded-lg font-semibold hover:bg-dark-maroon shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-gold text-maroon rounded-lg font-semibold hover:bg-yellow-400 shadow-md hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-maroon text-maroon rounded-lg font-semibold hover:bg-maroon hover:text-white;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 py-12 md:py-20;
+  }
+
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow;
+  }
+
+  .card-maroon {
+    @apply bg-maroon text-white rounded-lg shadow-lg p-6;
+  }
+
+  .divider-gold {
+    @apply border-t-4 border-gold;
+  }
+
+  .text-gradient-maroon {
+    @apply bg-gradient-to-r from-maroon to-dark-maroon bg-clip-text text-transparent;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-maroon focus:ring-2 focus:ring-maroon focus:ring-opacity-50;
+  }
+}
